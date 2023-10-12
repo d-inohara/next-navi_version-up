@@ -1,0 +1,121 @@
+@charset "UTF-8";
+.editor-styles-wrapper.block-editor-writing-flow {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  width: auto;
+  height: auto !important;
+  width: 100%;
+  max-width: 950px;
+  background-color: white;
+  margin: 20px auto;
+  padding: 25px 0 100px;
+}
+
+.editor-styles-wrapper.block-editor-writing-flow h1::before {
+  position: absolute;
+  top: -55px;
+  content: '※プレビュー機能を使う場合は、必ず先にカテゴリーを設定して下さい。\A※ブロック内で改行する場合は[shift]を押しながら[enter]を押して下さい。';
+  color: red;
+  font-size: 18px;
+  white-space: pre;
+}
+
+@media screen and (max-width: 1100px) {
+  .editor-styles-wrapper.block-editor-writing-flow h1::before {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .editor-styles-wrapper.block-editor-writing-flow h1::before {
+    font-size: 14px;
+  }
+}
+
+.editor-styles-wrapper.block-editor-writing-flow h1, .editor-styles-wrapper.block-editor-writing-flow h2, .editor-styles-wrapper.block-editor-writing-flow h3, .editor-styles-wrapper.block-editor-writing-flow h4 {
+  border: solid 1px #333;
+  padding: 10px;
+}
+
+.editor-styles-wrapper.block-editor-writing-flow .wp-block-table {
+  width: 100%;
+  max-width: 900px;
+}
+
+.editor-styles-wrapper.block-editor-writing-flow p {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.editor-styles-wrapper.block-editor-writing-flow p a {
+  text-decoration: none;
+}
+
+.editor-styles-wrapper.block-editor-writing-flow .interview_text::before {
+  position: absolute;
+  top: 18px;
+  content: '※画像が無い場合は入力しないでください。\A　下記の[画像がない場合の...]ブロックに入力してください。';
+  color: red;
+  white-space: pre;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1300px) {
+  .editor-styles-wrapper.block-editor-writing-flow .interview_text::before {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .editor-styles-wrapper.block-editor-writing-flow .interview_text::before {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .editor-styles-wrapper.block-editor-writing-flow .interview_text::before {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .editor-styles-wrapper.block-editor-writing-flow .interview_text::before {
+    top: 280px;
+    font-size: 12px;
+  }
+}
+
+.editor-styles-wrapper.block-editor-writing-flow .review_gallery::before {
+  position: absolute;
+  top: -25px;
+  content: '※ギャラリー画像は3枚以上登録しないでください。';
+  color: red;
+}
+
+.editor-styles-wrapper.block-editor-writing-flow .no_image_text {
+  border: 1px dashed #333;
+}
+
+.editor-styles-wrapper.block-editor-writing-flow .wp-block-spacer {
+  background-color: #abb8c3;
+}
+
+.editor-styles-wrapper.block-editor-writing-flow .wp-block-spacer::before {
+  position: absolute;
+  content: 'スペーサー';
+  color: #ffffff;
+  top: 40%;
+  left: 45%;
+}
+
+.wp-block {
+  max-width: 900px;
+}
+
+.wp-block-image .components-resizable-box__container {
+  height: auto !important;
+  max-width: 100% !important;
+}
+
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+  margin: 0 auto;
+}
